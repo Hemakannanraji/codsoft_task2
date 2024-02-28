@@ -1,0 +1,512 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+/* Variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--black-color);
+    background-color: var(--light-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-color);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--dark-color);
+}
+
+/* Navigation Menu */
+.navbar {
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.navbar-nav {
+    list-style: none;
+}
+
+.nav-link {
+    padding: 10px;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-link.active {
+    color: var(--primary-color);
+}
+
+/* Header Section */
+.header {
+    height: 100vh;
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.header h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.header .name {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.header .tagline {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--white-color);
+    margin: 10px 0;
+}
+
+.header .btn {
+    margin-top: 20px;
+}
+
+/* About Section */
+.about {
+    padding: 50px 0;
+}
+
+.about h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about .bio {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 0;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+.skills h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills .skill-card {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.skills .skill-card i {
+    font-size: 48px;
+    margin-right: 20px;
+}
+
+.skills .skill-card h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.skills .skill-card p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 0;
+}
+
+.projects h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects .project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects .project-card img {
+    transition: all 0.3s ease;
+}
+
+.projects .project-card:hover img {
+    transform: scale(1.1);
+}
+
+.projects .project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--white-color);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.projects .project-card:hover .project-info {
+    opacity: 1;
+}
+
+.projects .project-info h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.projects .project-info p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+/* Resume Section */
+.resume {
+    padding: 50px 0;
+}
+
+.resume h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.resume p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact .form-group {
+    margin: 10px 0;
+}
+
+.contact label {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-color);
+    background-color: var(--light-color);
+}
+
+.contact textarea {
+    resize: none;
+}
+
+/* Footer Section */
+.footer {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.footer .social-icons {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.footer .social-icons li {
+    margin: 0 10px;
+}
+
+.footer .social-icons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.3s ease;
+}
+
+.footer .social-icons li a:hover {
+    background-color: var(--dark-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        padding: 5px;
+    }
+
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .header .tagline {
+        font-size: 18px;
+    }
+
+    .header .btn {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .about h2, .skills h2, .projects h2, .resume h2, .contact h2 {
+        font-size: 30px;
+    }
+
+    .about .bio, .skills .skill-card p, .projects .project-info p, .resume p, .contact p, .contact label, .contact input, .contact textarea, .footer p {
+        font-size: 16px;
+    }
+
+    .skills .skill-card i, .projects .project-info h3 {
+        font-size: 20px;
+    }
+
+    .skills .skill-card h3 {
+        font-size: 18px;
+    }
+
+    .footer .social-icons li a {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+body.dark-mode .navbar {
+    background-color: var(--black-color);
+}
+
+body.dark-mode .navbar-brand, body.dark-mode .nav-link {
+    color: var --white-color;
+}
+
+body.dark-mode .navbar-brand:hover, body.dark-mode .nav-link:hover, body.dark-mode .nav-link.active {
+    color: var(--primary-color);
+}
+
+body.dark-mode .header {
+    background-image: url('header-bg-dark.jpg');
+}
+
+body.dark-mode .header h1, body.dark-mode .header .tagline {
+    color: var(--light-color);
+}
+
+body.dark-mode .about, body.dark-mode .resume {
+    background-color: var(--black-color);
+}
+
+body.dark-mode .skills, body.dark-mode .contact {
+    background-color: var(--dark-color);
+}
+
+body.dark-mode .projects .project-info {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--black-color);
+}
+
+body.dark-mode .footer {
+    background-color: var(--black-color);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Dark Mode Toggle */
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    background-color: var(--dark-color);
+}
+
+#dark-mode-toggle.active {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+.footer {
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0; /* Remove default margin for <p> */
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+/* Style for the LinkedIn icon image */
+.social-icons img {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-right: 5px; /* Adjust spacing for better alignment */
+}
+
